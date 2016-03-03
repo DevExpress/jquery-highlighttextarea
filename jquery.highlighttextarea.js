@@ -250,9 +250,9 @@
                 this.highlight();
             }, 100, this),
 
-            'resize.highlightTextarea': Utilities.throttle(function() {
-                this.updateSizePosition(true);
-            }, 50, this),
+            'change.highlightTextarea': Utilities.throttle(function () {
+                this.highlight();
+            }, 100, this),
             'resize.highlightTextarea': Utilities.throttle(function() {
                 this.updateSizePosition(true);
             }, 50, this),
