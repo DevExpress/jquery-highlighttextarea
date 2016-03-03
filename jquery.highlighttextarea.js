@@ -253,7 +253,9 @@
             'resize.highlightTextarea': Utilities.throttle(function() {
                 this.updateSizePosition(true);
             }, 50, this),
-
+            'resize.highlightTextarea': Utilities.throttle(function() {
+                this.updateSizePosition(true);
+            }, 50, this),
             'scroll.highlightTextarea select.highlightTextarea': Utilities.throttle(function() {
                 this.updateSizePosition();
             }, 50, this)
