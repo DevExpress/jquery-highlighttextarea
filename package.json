@@ -22,7 +22,7 @@
   "homepage": "https://github.com/garysieling/jquery-highlighttextarea",
   "repository": {
     "type": "git",
-    "url": "git://github.com/DevExpress/jquery-highlighttextarea.git"
+    "url": "git://github.com/garysieling/jquery-highlighttextarea.git"
   },
   "bugs": {
     "url": "https://github.com/garysieling/jquery-highlighttextarea/issues"
