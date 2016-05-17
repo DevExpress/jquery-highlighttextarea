@@ -651,6 +651,7 @@
                     oldSettings.words = oldSettings.words[oldSettings.color];
                     data = new Highlighter($this, oldSettings);
                     $this.data('highlighter', data);
+                    
                     return;
                 }
                 data[option].apply(data, Array.prototype.slice.call(args, 1));
