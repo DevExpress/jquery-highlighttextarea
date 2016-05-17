@@ -645,6 +645,14 @@
                 $this.data('highlighter', data);
             }
             if (typeof option == 'string') {
+                if (option == "redraw") {
+                    var oldSettings = data.settings;
+                    data.destroy();
+                    oldSettings.words = oldSettings.words[oldSettings.color];
+                    data = new Highlighter($this, oldSettings);
+                    $this.data('highlighter', data);
+                    return;
+                }
                 data[option].apply(data, Array.prototype.slice.call(args, 1));
             }
         });
